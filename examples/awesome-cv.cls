@@ -1,1 +1,2 @@
-../awesome-cv.cls
+\input{../awesome-cv.cls}
+\endinput

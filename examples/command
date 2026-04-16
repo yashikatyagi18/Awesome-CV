@@ -1,0 +1,1 @@
+D:\mikTexInstallation\miktex\bin\x64\lualatex.exe -interaction=nonstopmode -file-line-error -output-directory=examples examples\resume.tex
