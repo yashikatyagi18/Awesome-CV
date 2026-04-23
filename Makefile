@@ -1,5 +1,14 @@
 .PHONY: examples
 
+# Vendored Font Awesome 6 (TeX Live may not ship fontawesome6; see README in _fontawesome6_vendor)
+FA6_VENDOR = _fontawesome6_vendor
+export TEXINPUTS := .:$(FA6_VENDOR)/tex//:
+export LUAINPUTS := .:$(FA6_VENDOR)/tex//:
+export OPENTYPEFONTS := .:$(FA6_VENDOR)/opentype//:
+export TTFONTS := .:$(FA6_VENDOR)/opentype//:
+export TFONTS := .:$(FA6_VENDOR)/tfm//:
+export ENCFONTS := .:$(FA6_VENDOR)/enc//:
+
 CC = lualatex
 EXAMPLES_DIR = examples
 RESUME_DIR = examples/resume
