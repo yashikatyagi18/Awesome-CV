@@ -7,16 +7,14 @@
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
-\begin{cvskills}
-
-%---------------------------------------------------------
-  \cvskill
-    {Languages} % Category
-    {Java, C++, Python, HTML/CSS, SQL, JavaScript} % Skills
-
-%---------------------------------------------------------
-  \cvskill
-    {Technologies} % Category
-    {Spring Boot, Dropwizard, Angular, Splunk, Git, Grafana, Docker, ML} % Skills
-
-\end{cvskills}
+% Local skill layout matching \cventry's tabular structure exactly,
+% so label left edges align with entry titles in the other sections.
+\begin{cventries}
+\vspace{-2.0mm}
+\setlength\tabcolsep{0pt}
+\setlength{\extrarowheight}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3.0cm} L{\dimexpr\textwidth-3.0cm\relax}}
+  \skilltypestyle{Languages} & \skillsetstyle{Java, C++, Python, HTML/CSS, SQL, JavaScript} \\
+  \skilltypestyle{Technologies} & \skillsetstyle{Spring Boot, Dropwizard, Angular, Splunk, Git, Grafana, Docker, ML} \\
+\end{tabular*}
+\end{cventries}
